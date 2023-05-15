@@ -1,12 +1,12 @@
 from flask import Flask, render_template, request
 
-app = Flask(__name__)
+app = Flask(__name__)#Экземпляр приложения flask
 
 
-@app.route('/')
+@app.route('/')#Обозначение, что функция будет отвечать на веб запросы
 @app.route('/index')
 def index():
-    return render_template("index.html")
+    return render_template("index.html")#Импорт html файла
 
 
 @app.route('/', methods=['post', 'get'])
