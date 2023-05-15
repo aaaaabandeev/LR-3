@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ипотечный калькулятор</title>
+    <h1 style ="color:#00008B; font-size:40px">Ипотечный калькулятор</h1>
+</head>
+<body>
+<form action="" method="post">
+    <h3> Сумма кредита:</h3>
+    <input type="text" name="num_1">
+    <h3>Срок кредита (месяцы):</h3>
+    <input type="text" name="num_2">
+    <h3>Процентная ставка (%):</h3>
+    <input type="text" name="num_3">
+
+    <form name="myForm" action="" method="post" onsubmit=""><br>
+    <input type="radio" name="options" id="option1" value="1"> Аннуитетный платеж </input><br>
+    <input type="radio" name="options" id="option2" value="2"> Дифференцированный платеж </input><br>
+    <!--<fieldset>
+    <legend>Тип ежемесячного платежа:</legend>
+
+    <div>
+      <input type="radio" id="Аннуитентный" name="options" value="1"
+             checked>
+      <label for="Аннуитентный">Аннуитентный</label>
+    </div>
+
+    <div>
+      <input type="radio" id="Дифференцированный" name="options" value="2">
+      <label for="Дифференцированный">Дифференцированный</label>
+    </div>
+    </fieldset>-->
+
+    <input type="submit">
+</form>
+<h1>{{ans}}</h1>
+<h1>{{ans1}}</h1>
+<h1>{{ans2}}</h1>
+</body>
+</html>
