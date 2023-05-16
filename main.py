@@ -35,7 +35,7 @@ def form():
             i += 1
         all_procent = round(all_pay - sum, 2)
         return render_template('index.html', ans= ans_template, ans1= str('Общая сумма выплат ≈ ' + str(all_pay)), ans2= str('Начисленные проценты ≈ ' + str(all_pay - sum)))
-    else:
+    else if type != '1':
         return render_template('index.html', ans='Укажите тип платежа!')
 
 if __name__ == '__main__':
